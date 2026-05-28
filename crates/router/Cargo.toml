@@ -21,20 +21,9 @@ doctest = false
 gpui.workspace = true
 gpui-router-macros.workspace = true
 hashbrown.workspace = true
-matchit = "0.8.6"
+matchit.workspace = true
 smallvec.workspace = true
 
 [dev-dependencies]
 gpui = { workspace = true, features = ["test-support"] }
-
-[features]
-default = ["font-kit", "wayland", "x11"]
-test-support = ["gpui/test-support"]
-inspector = ["gpui/inspector"]
-leak-detection = ["gpui/leak-detection"]
-runtime_shaders = ["gpui/runtime_shaders"]
-macos-blade = ["gpui/macos-blade"]
-wayland = ["gpui/wayland"]
-x11 = ["gpui/x11"]
-font-kit = ["gpui/font-kit"]
-screen-capture = ["gpui/scap"]
+gpui_platform = { git = "https://github.com/zed-industries/zed", features = ["font-kit", "wayland"] }

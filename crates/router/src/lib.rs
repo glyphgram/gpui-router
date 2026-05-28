@@ -24,5 +24,5 @@ pub use state::*;
 
 /// Initializes the router system within a GPUI application context.
 pub fn init(cx: &mut gpui::App) {
-  RouterState::init(cx);
+    RouterState::init(cx);
 }
